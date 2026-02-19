@@ -1,0 +1,25 @@
+{
+    "name": "aeyoll/a11y-harmony",
+    "description": "a11y Harmony",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "version": "1.0.0",
+    "require": {
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "object-calisthenics/phpcs-calisthenics-rules": "*",
+        "phpcompatibility/php-compatibility": "*",
+        "wp-coding-standards/wpcs": "*",
+        "composer/installers": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "installer-name": "a11y-harmony"
+    }
+}
