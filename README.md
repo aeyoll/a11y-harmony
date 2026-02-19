@@ -10,27 +10,6 @@
 | **Contact Form** | `aria-label` on `<form>`, `aria-required` on required fields, live error announcements, `aria-invalid` + `aria-describedby` on invalid fields |
 | **Carousel** | Remove misleading `aria-label="X / Y"` from slides (RGAA 6.1), keyboard nav for buttons (RGAA 7.1), `role="list"` / `role="listitem"` (RGAA 9.3) |
 
-## File Structure
-
-```
-a11y-harmony/
-├── a11y-harmony.php          ← Plugin entry point
-├── includes/
-│   ├── assets.php            ← CSS & JS enqueueing
-│   ├── cookie-banner.php     ← Server-side cookie banner fixes
-│   ├── contact-form.php      ← Server-side CF7 fixes
-│   └── carousel.php          ← (reserved for server-side hooks)
-└── assets/
-    ├── css/
-    │   ├── cookie-banner.css
-    │   ├── contact-form.css
-    │   └── carousel.css
-    └── js/
-        ├── cookie-banner.js
-        ├── contact-form.js
-        └── carousel.js
-```
-
 ## Installation
 
 1. Copy the `a11y-harmony/` folder into `wp-content/plugins/`.
