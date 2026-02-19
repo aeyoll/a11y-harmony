@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: A11y Harmony
- * Plugin URI:  https://example.com/a11y-harmony
+ * Plugin URI:  https://github.com/aeyoll/a11y-harmony
  * Description: Automatically patches common accessibility issues (RGAA) on cookie banners, contact forms, and carousels — with zero configuration required.
  * Version:     1.0.0
  * Author:      Jean-Philippe Bidegain
