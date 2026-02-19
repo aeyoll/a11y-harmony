@@ -1,0 +1,18 @@
+[bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+
+[bumpver.file_patterns]
+"composer.json" = [
+  '"version": "{version}",$',
+]
+"a11y-harmony.php" = [
+  "Version: {version}$",
+  "define('A11Y_HARMONY_VERSION', '{version}');$",
+]
+"README.md" = [
+  "**Stable tag:** {version}$",
+]
+"readme.txt" = [
+  "Stable tag: {version}$",
+]
