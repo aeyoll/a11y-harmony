@@ -1,0 +1,45 @@
+/**
+ * A11y Harmony — Carousel CSS
+ *
+ * Accessibility-focused styles for Swiper.js carousels.
+ */
+
+/* --- Adequate hit area on navigation buttons ----------------------- */
+.swiper-button-prev,
+.swiper-button-next {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* --- Visible focus on navigation buttons --------------------------- */
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* --- Maintain list semantics without visual list markers ----------- */
+.swiper-wrapper[role="list"] {
+  list-style: none;
+}
+
+/* --- Visible focus on slide links ---------------------------------- */
+.swiper-slide a:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* --- Screen-reader label on nav buttons (via ::before pseudo) ------ */
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  content: attr(aria-label);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

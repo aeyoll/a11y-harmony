@@ -1,0 +1,40 @@
+/**
+ * A11y Harmony — Contact Form CSS
+ *
+ * Accessibility-focused styles for Contact Form 7.
+ */
+
+/* --- Visible focus on form controls -------------------------------- */
+.wpcf7 input:focus,
+.wpcf7 textarea:focus,
+.wpcf7 select:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* --- Visible focus on submit button -------------------------------- */
+.wpcf7 input[type="submit"]:focus,
+.wpcf7 button[type="submit"]:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* --- Error state styling for invalid fields ------------------------ */
+.wpcf7 .wpcf7-not-valid {
+  border-color: #c0392b;
+}
+
+/* --- Error tip text ------------------------------------------------ */
+.wpcf7 .wpcf7-not-valid-tip {
+  color: #c0392b;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+  display: block;
+}
+
+/* --- Response output (success / error banner) ---------------------- */
+.wpcf7 .wpcf7-response-output {
+  padding: 0.75em 1em;
+  margin-top: 1em;
+  border-radius: 3px;
+}

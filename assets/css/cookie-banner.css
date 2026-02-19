@@ -1,0 +1,55 @@
+/**
+ * A11y Harmony — Cookie Banner CSS
+ *
+ * Accessibility-focused styles for cookie consent banners.
+ */
+
+/* --- Screen-reader-only utility ------------------------------------ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* --- Ensure links with injected text are visible ------------------- */
+.cmplz-link.cookie-statement,
+.cmplz-link.privacy-statement {
+  min-width: auto;
+  min-height: auto;
+}
+
+/* --- Visible focus on all interactive elements --------------------- */
+.cmplz-cookiebanner a:focus,
+.cmplz-cookiebanner button:focus,
+.cmplz-cookiebanner [role="button"]:focus,
+.cmplz-cookiebanner input:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* --- Adequate hit area on close button ----------------------------- */
+.cmplz-close {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- List structure for link groups -------------------------------- */
+.cmplz-links-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.cmplz-links-list li {
+  display: inline-block;
+  margin: 0;
+}
