@@ -1,6 +1,6 @@
 <?php
 /**
- * A11y Harmony — Carousel module
+ * A11y Harmony - Carousel module
  *
  * Fixes RGAA issues on Swiper.js carousels (via JS):
  * - RGAA 6.1 : aria-label on slide links must include visible text

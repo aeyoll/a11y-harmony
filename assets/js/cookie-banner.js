@@ -1,5 +1,5 @@
 /**
- * A11y Harmony — Cookie Banner JS
+ * A11y Harmony - Cookie Banner JS
  *
  * Fixes RGAA accessibility issues on cookie consent banners at runtime:
  *   - RGAA 7.1  : Close button keyboard (Enter / Space) support
@@ -14,7 +14,7 @@
   'use strict';
 
   /* ------------------------------------------------------------------ */
-  /* Core fix function                                                     */
+  /* Core fix function                                                  */
   /* ------------------------------------------------------------------ */
   function fixCookieBannerAccessibility() {
     var banner = document.querySelector('.cmplz-cookiebanner');
@@ -121,7 +121,7 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /* Init                                                                  */
+  /* Init                                                               */
   /* ------------------------------------------------------------------ */
   document.addEventListener('DOMContentLoaded', function () {
     fixCookieBannerAccessibility();

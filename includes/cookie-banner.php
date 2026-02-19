@@ -1,6 +1,6 @@
 <?php
 /**
- * A11y Harmony — Cookie Banner module
+ * A11y Harmony - Cookie Banner module
  *
  * Fixes RGAA issues on Complianz (cmplz) cookie banners:
  * - RGAA 6.1  : Empty links without accessible label

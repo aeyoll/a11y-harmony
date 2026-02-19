@@ -1,5 +1,5 @@
 /**
- * A11y Harmony — Carousel JS
+ * A11y Harmony - Carousel JS
  *
  * Fixes RGAA issues on Swiper.js carousels at runtime:
  *   - RGAA 6.1 : Remove misleading aria-label="X / Y" from slides
@@ -11,7 +11,7 @@
   'use strict';
 
   /* ------------------------------------------------------------------ */
-  /* Core fix function                                                     */
+  /* Core fix function                                                  */
   /* ------------------------------------------------------------------ */
   function fixCarouselAccessibility() {
 
@@ -57,7 +57,7 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /* Init                                                                  */
+  /* Init                                                               */
   /* ------------------------------------------------------------------ */
   document.addEventListener('DOMContentLoaded', function () {
     fixCarouselAccessibility();

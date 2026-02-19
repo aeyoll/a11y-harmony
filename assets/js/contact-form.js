@@ -1,5 +1,5 @@
 /**
- * A11y Harmony — Contact Form JS
+ * A11y Harmony - Contact Form JS
  *
  * Enhances Contact Form 7 accessibility at runtime:
  *   - Adds role="alert" + aria-live="assertive" to error output
@@ -15,7 +15,7 @@
   document.addEventListener('DOMContentLoaded', function () {
 
     /* ------------------------------------------------------------------ */
-    /* Validation error                                                      */
+    /* Validation error                                                   */
     /* ------------------------------------------------------------------ */
     document.addEventListener('wpcf7invalid', function (event) {
       var form = event.target;
@@ -46,7 +46,7 @@
     }, false);
 
     /* ------------------------------------------------------------------ */
-    /* Successful submission — clean up                                      */
+    /* Successful submission - clean up                                   */
     /* ------------------------------------------------------------------ */
     document.addEventListener('wpcf7mailsent', function (event) {
       var form = event.target;
@@ -59,7 +59,7 @@
     }, false);
 
     /* ------------------------------------------------------------------ */
-    /* Spam detection                                                        */
+    /* Spam detection                                                     */
     /* ------------------------------------------------------------------ */
     document.addEventListener('wpcf7spam', function (event) {
       var form = event.target;

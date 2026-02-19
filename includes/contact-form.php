@@ -1,6 +1,6 @@
 <?php
 /**
- * A11y Harmony — Contact Form module
+ * A11y Harmony - Contact Form module
  *
  * Enhances Contact Form 7 accessibility:
  * - Adds aria-label to the <form> element
