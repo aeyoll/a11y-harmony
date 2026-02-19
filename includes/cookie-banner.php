@@ -25,17 +25,18 @@ function a11y_harmony_fix_cookie_empty_links( $content ) {
         return $content;
     }
 
-    // Cookie statement empty link
+    $cookie_label = __( 'Cookie policy', 'a11y-harmony' );
+    $privacy_label = __( 'Privacy policy', 'a11y-harmony' );
+
     $content = preg_replace(
         '/<a\s+class="cmplz-link cookie-statement"\s+href="([^"]+)"\s+data-relative_url="[^"]*"><\/a>/i',
-        '<a class="cmplz-link cookie-statement" href="$1" data-relative_url="" aria-label="Politique de cookies">Politique de cookies</a>',
+        '<a class="cmplz-link cookie-statement" href="$1" data-relative_url="" aria-label="' . esc_attr( $cookie_label ) . '">' . esc_html( $cookie_label ) . '</a>',
         $content
     );
 
-    // Privacy statement empty link
     $content = preg_replace(
         '/<a\s+class="cmplz-link privacy-statement"\s+href="([^"]+)"\s+data-relative_url="[^"]*"><\/a>/i',
-        '<a class="cmplz-link privacy-statement" href="$1" data-relative_url="" aria-label="Politique de confidentialité">Politique de confidentialité</a>',
+        '<a class="cmplz-link privacy-statement" href="$1" data-relative_url="" aria-label="' . esc_attr( $privacy_label ) . '">' . esc_html( $privacy_label ) . '</a>',
         $content
     );
 

@@ -27,7 +27,7 @@ function a11y_harmony_cf7_form_label( $form ) {
     if ( strpos( $form, 'aria-label' ) === false ) {
         $form = str_replace(
             '<form',
-            '<form aria-label="Formulaire de contact"',
+            '<form aria-label="' . esc_attr__( 'Contact form', 'a11y-harmony' ) . '"',
             $form
         );
     }

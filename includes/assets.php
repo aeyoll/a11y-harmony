@@ -44,7 +44,16 @@ function a11y_harmony_enqueue_scripts() {
         A11Y_HARMONY_URL . 'assets/js/cookie-banner.js',
         [],
         A11Y_HARMONY_VERSION,
-        true  // load in footer
+        true
+    );
+
+    wp_localize_script(
+        'a11y-harmony-cookie-banner',
+        'a11yHarmonyCookieBanner',
+        [
+            'cookiePolicyLabel' => __( 'Cookie policy', 'a11y-harmony' ),
+            'privacyPolicyLabel' => __( 'Privacy policy', 'a11y-harmony' ),
+        ]
     );
 
     wp_enqueue_script(

@@ -76,14 +76,22 @@
     });
 
     /* --- Empty links: add text + aria-label (RGAA 6.1) --- */
+    var cookieLabel = (typeof a11yHarmonyCookieBanner !== 'undefined' && a11yHarmonyCookieBanner.cookiePolicyLabel)
+      ? a11yHarmonyCookieBanner.cookiePolicyLabel
+      : 'Cookie policy';
+    var privacyLabel = (typeof a11yHarmonyCookieBanner !== 'undefined' && a11yHarmonyCookieBanner.privacyPolicyLabel)
+      ? a11yHarmonyCookieBanner.privacyPolicyLabel
+      : 'Privacy policy';
+
     var emptyLinks = banner.querySelectorAll('a.cmplz-link:not([aria-label])');
     emptyLinks.forEach(function (link) {
       if (!link.textContent.trim() && !link.querySelector('img')) {
-        var label = link.classList.contains('cookie-statement')
-          ? 'Politique de cookies'
-          : link.classList.contains('privacy-statement')
-          ? 'Politique de confidentialité'
-          : null;
+        var label = null;
+        if (link.classList.contains('cookie-statement')) {
+          label = cookieLabel;
+        } else if (link.classList.contains('privacy-statement')) {
+          label = privacyLabel;
+        }
 
         if (label) {
           link.setAttribute('aria-label', label);
